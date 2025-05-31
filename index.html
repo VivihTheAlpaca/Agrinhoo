@@ -34,8 +34,10 @@
       height: auto;
       border-radius: 10px;
       margin-bottom: 20px;
-      box-shadow: 0 0 20px #55a574;
+      box-shadow: 0 0 20px #55a574; 
     }
+
+   
 
     p {
       font-size: 1.2em;
@@ -102,7 +104,7 @@
       animation: typing 2s steps(40, end), fadeIn 0.5s ease;
     }
 
-    /* Animações */
+
     @keyframes fadeInUp {
       from {
         opacity: 0;
@@ -124,7 +126,7 @@
       to { opacity: 1 }
     }
 
-    /* Modo claro */
+   
     .modo-claro {
       background-color: white;
       color: black;
@@ -140,13 +142,7 @@
       color: white;
     }
 
-    /* Relógio */
-    #data-hora {
-      margin-top: 30px;
-      font-style: italic;
-      color: #aaa;
-      font-size: 1.1em;
-    }
+  
 
     /* Botão tema */
     #toggle-tema {
@@ -177,7 +173,7 @@
         <td>cidade</td>
         <td>Itens exportados.</td>
         <td>
-          <button onclick="toggleTexto(0)">Ver Segredo</button>
+          <button onclick="toggleTexto(0)">Ver informação</button>
           <div class="hidden-text">"O café que desperta a cidade, o algodão que veste a rotina, os grãos que abastecem mercados — tudo nasce no campo. Cada produto exportado carrega o trabalho rural, conectando a vida urbana às raízes da terra." </div>
         </td>
       </tr>
@@ -185,7 +181,7 @@
         <td>Campo</td>
         <td>Tecnologia.</td>
         <td>
-          <button onclick="toggleTexto(1)">Ver Segredo</button>
+          <button onclick="toggleTexto(1)">Ver informação</button>
           <div class="hidden-text">"Do solo fértil ao concreto das cidades, a tecnologia une mundos. Sensores rurais enviam dados para centros urbanos, onde algoritmos transformam colheitas em decisões inteligentes. O campo produz, a cidade processa — juntos, alimentam o amanhã.!" </div>
         </td>
       </tr>
@@ -194,6 +190,30 @@
     </table>
 
     <div id="data-hora"></div>
+
+
+
+       <div class="conteudo">
+    <h1>Caminhos da Colheita</h1>
+    <p>
+      Cada alimento, tecido ou produto natural percorre um longo caminho antes de chegar à cidade. Esse trajeto — desde a preparação da terra até o transporte e distribuição — forma os <strong>"Caminhos da Colheita"</strong>, uma rede invisível que sustenta a vida urbana.
+    </p>
+    <p>
+      No campo, o trabalho começa cedo: máquinas colhem, sensores analisam o solo, e agricultores aplicam técnicas que aliam tradição e inovação. Daí, caminhões levam os produtos para centros de distribuição, mercados, feiras e indústrias nas cidades.
+    </p>
+    <p>
+      A tecnologia urbana também participa desse ciclo: sistemas logísticos, aplicativos de rastreio e marketplaces digitais facilitam a chegada dos produtos certos ao consumidor. Assim, a cidade se nutre do campo — e o campo se fortalece com a estrutura da cidade.
+    </p>
+    <p>
+      Unir esses dois mundos é mais que necessário: é vital para garantir um futuro mais conectado, sustentável e eficiente.
+    </p>
+
+<img src="img/RO_Festival da Colheita-1400x600.png" alt="Imagem Divônica">
+
+
+
+   </div>
+
 
     
     <audio id="click-sound" src="https://www.myinstants.com/media/sounds/button-click.mp3" preload="auto"></audio>
@@ -219,6 +239,11 @@
       document.body.classList.toggle('modo-claro');
     }
 
+ 
+
+
+
+    
   </script>
 </body>
 </html>
